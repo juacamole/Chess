@@ -1,6 +1,5 @@
 package org.example;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,6 +9,8 @@ public class Main {
             a[i] = i + 1;
             System.out.println(a[i]);
         }
+        int num1  = 27;
+        int num2 = 9;
         int b = 0;
         for (int i = 0; i < a.length; i++) {
             b = b + a[i];
@@ -31,5 +32,12 @@ public class Main {
         for (int z = 0; z < d.length; z++){
             System.out.println(d[z]);
         }
+
+        int sum1 = error(num1, num2);
+
+    }
+
+    public static int error(int num1, int num2){
+        return num1/num2;
     }
 }
